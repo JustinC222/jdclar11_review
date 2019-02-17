@@ -96,10 +96,10 @@ public class PowerSet
      * @param pos is the position pointer
      * @param nums is the array we are given from the user
      */
-    public static void buildSubsets(List<List<Integer>> res, List<Integer> each, int pos, int[] nums) {
+    public static void buildSubsets(List<List<Integer>> result, List<Integer> each, int pos, int[] nums) {
        if (pos <= nums.length) 
        {
-           res.add(each);
+    	   result.add(each);
        }else {
     	   // do nothing
        }
@@ -107,7 +107,7 @@ public class PowerSet
        while (i < nums.length) 
        {
            each.add(nums[i]);
-           buildSubsets(res, new ArrayList<>(each), i + 1, nums);
+           buildSubsets(result, new ArrayList<>(each), i + 1, nums);
            each.remove(each.size() - 1);
            i++;
            while (i < nums.length && nums[i] == nums[i - 1]) {i++;}
