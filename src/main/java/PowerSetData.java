@@ -16,9 +16,17 @@ public class PowerSetData {
         myArray = null;
     }
 
-
-    // read numbers from input to array myArray
-    // duplicates should be removed
+    /**
+     * Method: initializeArray
+     * @param string - String used to initialize array
+     * @throws NumberFormatException
+     * @throws NoSuchElementException
+     * @throws NegativeArraySizeException
+     * @returns void
+     * Description: read numbers from input to array myArray
+     * duplicates should be removed
+     */
+    
     public void initializeArray(String string) throws NumberFormatException,
     NoSuchElementException, NegativeArraySizeException{
 
